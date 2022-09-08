@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <form class="forms">
+        <input type="text" name="output" readonly />
+        <input class="clear" type="button" value="C" onclick="makeClear()"/>
+        <input class="operation" type="button" value="/" onclick="makeFormula(this);"/>
+        <input type="button" value="1" onclick="makeFormula(this);" />
+        <input type="button" value="2" onclick="makeFormula(this);"/>
+        <input type="button" value="3" onclick="makeFormula(this);"/>
+        <input class="operation" type="button" value="*" onclick="makeFormula(this);"/>
+        <input type="button" value="4" onclick="makeFormula(this);"/>
+        <input type="button" value="5" onclick="makeFormula(this);"/>
+        <input type="button" value="6" onclick="makeFormula(this);"/>
+        <input class="operation" type="button" value="+" onclick="makeFormula(this);"/>
+        <input type="button" value="7" onclick="makeFormula(this);"/>
+        <input type="button" value="8" onclick="makeFormula(this);"/>
+        <input type="button" value="9" onclick="makeFormula(this);"/>
+        <input class="operation" type="button" value="-" onclick="makeFormula(this);"/>
+        <input class="dot" type="button" value="." onclick="makeFormula(this);"/>
+        <input type="button" value="0" onclick="makeFormula(this);"/>
+        <input class="operation result" type="button" value="=" onclick="makeResult()"/>
+      </form>
+    </div>
+  </body>
+</html>

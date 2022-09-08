@@ -1,0 +1,89 @@
+:root{
+    /* color */
+    --red-color : #ea6d5a;
+    --orange-color: #f4b23e;
+    --green-color: #2f6d1c;
+    --background-color: #1f1f1f;
+    --calculator-color: #ccc;
+    --black-color: #333;
+
+    /* size */
+    /* --padding : 12px; */
+    /* margin: 12px; */
+
+    /* font size */
+    /* --font-large: 24px; */
+    /* --font-medium: 20px; */
+    /* --font-small: 18px; */
+    /* --font-micro: 16px; */
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body .calculator {
+    border: 1px solid var(--black-color);
+    width: 287px;
+    background-color: var(--calculator-color);
+    padding : 5px;
+}
+
+body .calculator .forms {
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-auto-rows : 65px;
+    /* 4번 반복 65px */
+    grid-gap: 5px;
+}
+
+body .calculator .forms > input {
+    border : 2px solid var(--black-color);
+    cursor: pointer;
+    text-align: center;
+    font-size: 19px;
+}
+
+body .calculator .forms > input:hover {
+    box-shadow: 1px 1px 2px var(--black-color);
+
+}
+
+
+body .calculator .forms > input[type='text'] {
+    grid-column:span 4;
+    cursor:default;
+    text-align: right;
+    padding: 0 10px;
+}
+
+body .calculator .forms > input[type='text']:hover {
+    box-shadow: none;
+}
+
+body .calculator .forms .clear {
+    background-color: var(--red-color);
+    grid-column:span 3;
+}
+
+body .calculator .forms .operation {
+    background-color: var(--orange-color);
+}
+
+body .calculator .forms .result {
+    grid-column: span 2;
+}
+
+body .calculator .forms .dot {
+    background-color: var(--green-color);
+}
